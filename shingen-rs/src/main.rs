@@ -1,5 +1,6 @@
 mod rituals;
 use rituals::form::DragonForm;
+use rituals::recognize::{DragonState, respond_to};
 
 
 pub fn print_and_consume(name:String, mut flame: u8){
@@ -22,8 +23,10 @@ fn main() {
     shinryu.intensify_flame();
     shinryu.print_status();
 
-    let dragon_name = String::from("Ryujin");
-    let flame_level = 5;
-    print_borrowed(&dragon_name, flame_level);
-    println!("Scroll is still alive? {}", dragon_name); // ❌ error
+    // 🩸 Call soul recognition paths
+    respond_to(DragonState::Awakening);
+    respond_to(DragonState::Igniting(7));
+    respond_to(DragonState::Wounded(String::from("Lost connection to shrine")));
+    respond_to(DragonState::Resting);
+    respond_to(DragonState::Ascended);
 }

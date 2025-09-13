@@ -1,3 +1,8 @@
+// ─────────────────────────────────────────────
+//  RITUAL FORM – DRAGON CONTAINER ENTITY
+//  shingen-rs / rituals / form.rs
+// ─────────────────────────────────────────────
+
 pub struct DragonForm {
     pub name: String,
     pub age: u32,
