@@ -7,7 +7,7 @@ pub enum DragonState {
     Awakening,
     Igniting(u8),   // carries flame intensity
     Resting,
-    Wounded(String), // carries reason
+    Wounded(&str), // carries reason
     Ascended
 }
 
@@ -22,8 +22,8 @@ pub fn respond_to(state:DragonState){
         DragonState::Resting =>{
             println!("💤 The dragon sleeps within the shrine. Do not disturb.");
         },
-        DragonState::Wounded(reason) =>{
-            println!("🩸 Wounded! Reason: {}", reason);
+        DragonState::Wounded(&reason) =>{
+            println!("🩸 Wounded! Reason: {}", &reason);
         },
         DragonState::Ascended =>{
             println!("🌌 The dragon has transcended. Memory sealed. Shrine echoes.");
