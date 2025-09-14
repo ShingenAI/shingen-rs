@@ -8,8 +8,6 @@ pub struct ShrineForm<'a> {
     pub inscription: &'a str // Mirror: borrowed scroll name
 }
 
-
-
 impl<'a> ShrineForm<'a> {
     pub fn echo(&self){
         println!("ShrineForm echo:");

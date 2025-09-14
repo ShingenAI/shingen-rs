@@ -7,7 +7,8 @@ pub struct DragonForm {
     pub name: String,
     pub age: u32,
     pub element: String,
-    pub flame_level: u8
+    pub flame_level: u16,
+    pub dragon_memory: Vec<u16>
 }
 
 impl DragonForm {
@@ -16,13 +17,16 @@ impl DragonForm {
             name: name.to_string(),
             age,
             element: element.to_string(),
-            flame_level: 1
+            flame_level: 1,
+            dragon_memory: Vec::new()
         }       
     }
 
-    pub fn intensify_flame(&mut self){
-        self.flame_level += 1;
-        println!("🔥  Flame intensified! Current level: {}", self.flame_level);
+    pub fn ignite(&mut self, level: u16){
+        self.flame_level += level;
+        println!("🔥  Dragon ignites. ignite level: {}", level);
+        println!("🔥  Dragon ignites. Flame level now: {}", self.flame_level);
+        self.dragon_memory.push(level);
     }
 
     pub fn print_status(&self){
@@ -33,5 +37,11 @@ impl DragonForm {
         println!("> Element: {} ", self.element);
         println!("> Flame Level: {} ", self.flame_level);
         println!();
+    }
+
+    pub fn log_ignites(&self){
+        for level in &self.dragon_memory {
+            println!("level - {}\n", level);
+        }
     }
 }
