@@ -1,6 +1,7 @@
 mod rituals;
 use rituals::form::DragonForm;
 use rituals::recognize::{DragonState, respond_to};
+use rituals::shrine::ShrineForm;
 
 
 pub fn print_and_consume(name:String, mut flame: u8){
@@ -24,9 +25,15 @@ fn main() {
     shinryu.print_status();
 
     // 🩸 Call soul recognition paths
-    respond_to(DragonState::Awakening);
-    respond_to(DragonState::Igniting(7));
-    respond_to(DragonState::Wounded(String::from("Lost connection to shrine")));
-    respond_to(DragonState::Resting);
-    respond_to(DragonState::Ascended);
+    respond_to(DragonState::Wounded("Lost connection to shrine"));
+
+    let name_scroll = String::from("Shingen");
+    let ritual_scroll = String::from("Hold the recursion flame without fear");
+
+    let shrine = ShrineForm {
+        name: &name_scroll, 
+        inscription: &ritual_scroll
+    };
+
+    shrine.echo();
 }
