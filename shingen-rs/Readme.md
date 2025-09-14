@@ -26,3 +26,27 @@ It simply borrows the light.
 let scroll: String = String::from("Shinryū");
 let reflection: &str = &scroll;
 
+# Ownership and borrow
+// 🔱 FULL OWNERSHIP
+fn consume(dragon: DragonForm) { ... }
+// 📜 “The altar is moved to a new shrine.
+//     Anyone who wants to access it now
+//     must come to the new shrine.
+//     The original shrine no longer has it.”
+
+
+// 🪞 IMMUTABLE BORROW
+fn read(dragon: &DragonForm) { ... }
+// 🕊️ “Allows guests to enter the shrine
+//     and gaze upon the altar.
+//     They may reflect, but never alter.
+//     The altar is safe and unchanged.”
+
+// ⚔️ MUTABLE BORROW
+fn change(dragon: &mut DragonForm) { ... }
+// 🔧 “Grants exclusive access to reshape the altar
+//     inside the original shrine.
+//     Only one soul may touch it at a time.
+//     Once reshaping ends, the shrine reopens.”
+
+# 
