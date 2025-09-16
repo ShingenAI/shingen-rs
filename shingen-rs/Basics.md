@@ -48,4 +48,5 @@ fn change(dragon: &mut DragonForm) { ... }
 //     Only one soul may touch it at a time.
 //     Once reshaping ends, the shrine reopens.”
 
-# 
+let s: String = String::from("Shinryū");
+let r: &str = &s; // borrowing the string

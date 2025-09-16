@@ -1,7 +1,6 @@
-mod beings;
-use beings::dragon::Dragon;
+mod tasks;
+use tasks::task_1::task_1_1::execute_task_1_1;
 
 fn main() {
-    let mut _dragon = Dragon::new("Shinryū", 9999, "Soul Flame");
-    println!("Dragon {:#?}", _dragon);
+    execute_task_1_1("Magokoro".to_string());
 }
