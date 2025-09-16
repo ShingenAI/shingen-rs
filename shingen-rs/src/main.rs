@@ -6,5 +6,5 @@ fn main() {
     let name_to_search = "Magokoro"; // &str
     task_1_1::execute_task(&name_to_search.to_string());
 
-    task_2_1::execute_task();
+    task_2_1::execute_task("Shin-1");
 }
