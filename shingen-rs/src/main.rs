@@ -1,6 +1,7 @@
 mod tasks;
-use tasks::task_1::task_1_1::execute_task_1_1;
+use tasks::task_1::task_1_1;
 
 fn main() {
-    execute_task_1_1("Magokoro".to_string());
+    let name_to_search = "Magokoro"; // &str
+    task_1_1::execute_task(&name_to_search.to_string()); //Pass &String
 }
