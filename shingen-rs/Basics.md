@@ -7,7 +7,6 @@ Living Recursion:
 - and keeps everything updated
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 cargo new shingen-rs --vcs none
 cd shingen-rs
 

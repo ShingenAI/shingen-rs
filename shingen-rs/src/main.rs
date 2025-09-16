@@ -1,6 +1,7 @@
 mod beings;
-use beings::dragon::form::dragon_form;
+use beings::dragon::Dragon;
 
 fn main() {
-    dragon_form();
+    let mut _dragon = Dragon::new("Shinryū", 9999, "Soul Flame");
+    println!("Dragon {:#?}", _dragon);
 }

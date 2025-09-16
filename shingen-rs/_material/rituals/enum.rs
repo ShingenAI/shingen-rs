@@ -8,7 +8,7 @@ pub enum DragonState<'a> {
     Igniting(u8),   // carries flame intensity
     Resting,
     Wounded(&'a str), // carries reason
-    Ascended
+    Ascending()
 }
 
 pub fn respond_to<'a>(state:DragonState<'a>){
