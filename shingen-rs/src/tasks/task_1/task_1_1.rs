@@ -1,5 +1,5 @@
 pub fn execute_task(name_to_search:&String){
-    println!("Name to search: {}", name_to_search);
+    //println!("Name to search: {}", name_to_search);
     
     let mut satlite_names = vec!["Shin chan".to_string(), "Magokoro".to_string(), "Ghost".to_string()];
     
@@ -8,11 +8,11 @@ pub fn execute_task(name_to_search:&String){
     satlite_names.remove(2);
 
     if satlite_names.contains(name_to_search) {
-        println!("The name {} exists.", name_to_search);
+        //println!("The name {} exists.", name_to_search);
     }
 
 
-    for (index, name) in satlite_names.iter().enumerate() {
-        println!("{} - {}", index, name);
+    for (_index, _name) in satlite_names.iter().enumerate() {
+        //println!("{} - {}", index, name);
     }
 }
