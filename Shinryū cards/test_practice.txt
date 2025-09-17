@@ -1,0 +1,124 @@
+
+You're a hiring engineer at a space technology company:  https://arkedgespace.com/
+Below is a job description for a Project Manager role in the Software Development Department, along with coding test instructions.
+
+--
+Position: Project Manager - Software Development
+
+About📄
+About the Company🏢
+A space venture company engaged in the design, manufacturing, and operation of ultra-small satellites. The company focuses on developing 3U and 6U satellites and building satellite constellations, while also providing related components, software, and ground station operation services. Through collaboration with research institutions and participation in public projects, it aims to democratize space business and advance deep-space exploration.
+Job Description💼
+Job Overview
+This position is responsible for project management within the Computing Infrastructure Department, which oversees the development and maintenance of various systems, tools, and platforms related to ultra-small satellites.
+
+The Computing Infrastructure Department was established in January 2024. As a cross-departmental organization, it leverages computing technologies to solve company-wide challenges, optimize workflows, improve development experiences, and provide advisory support on software and computing technologies.
+
+The department currently manages a wide range of products, including:
+* On-Board Computers (OBCs)
+* Flight software
+* Ground control systems
+* Manufacturing and testing support systems
+* Analysis tools
+* Various internal systems
+
+The qualities sought in a Project Manager include:
+
+* Ability to establish and improve workflows and management styles
+* Understanding of modern computing technologies and software development
+* Strong commitment to successfully delivering projects
+
+Domain knowledge such as space engineering is required but can be acquired after joining.
+
+A strong project manager is essential for the future growth of the department. The position is ideal for those who wish to lead the global space business.
+
+Specific Responsibilities
+* Manage the development of ultra-small satellite ground control systems
+* Manage the development of systems that automate and support satellite manufacturing and testing
+* Manage the development of systems that enable traceable satellite manufacturing and testing
+* Conduct proof-of-concept projects using ultra-small satellites
+* Support recruitment and talent development
+
+Position Benefits
+* Engage in challenging missions under the unique constraints of ultra-small satellites
+* Work on complex systems spanning multiple satellites and the intersection of ground and space operations
+* Develop B2B or internal services closely connected to end-users, enabling a clear sense of product impact
+* Work closely with executive leadership and experience the forefront of the space industry
+* Participate in global projects, including operations and development in countries such as Rwanda and Chile, and collaborative research with international space agencies such as NASA and ESA
+
+Team & Culture
+* Computing Infrastructure Department
+* Team composition: 1 manager, 6 engineers, 8 interns
+* Predominantly 20s–30s, with a diverse range of experience
+
+Tools Used
+* Main programming languages: Rust, TypeScript
+* Main libraries: React
+* Provided PC: As requested by the employee
+* Development environment: macOS or Linux (including WSL2)
+* Communication: GitHub, Slack, Zoom
+* Code management: GitHub
+* Task management: GitHub Projects V2, GitHub Issues
+* Project management: Redmine
+* Version control: Git
+* CI/CD: GitHub Actions
+* Infrastructure as Code: Terraform
+* Monitoring: Amazon CloudWatch, Grafana, Sentry
+* Databases: PostgreSQL, DynamoDB
+
+Selection Process
+Coding Test → Document Screening → First Interview → Second Interview (+ Aptitude Test) → Final Interview
+*Note on the Coding Test:
+The coding test evaluates both technical skills and cultural fit. Candidates who take initiative and are willing to try even when uncertain are especially welcome.
+
+Location: Tokyo
+Remote work available as needed (subject to discussion based on job responsibilities and other circumstances).
+(Typically, about 2 days per week in the office is recommended.)
+Requirements💪
+Must
+* Experience in product development within a team (B2B, B2C, or contract-based projects)
+* Experience managing small to medium-sized projects
+Japanese Level🇯🇵
+★★☆☆☆ Intermediate
+Better
+* Experience in requirements and specifications definition (functional and non-functional)
+* Experience in effort estimation
+* Experience in budget planning and management
+* Ability to conduct everyday conversation in Japanese
+Ideal Candidate
+* Enjoys experimenting with cutting-edge technologies
+* Has a clear vision regarding the latest software engineering practices
+* Can proactively contribute while collaborating with others in a startup environment
+
+--
+
+--
+[Coding Test Instructions]
+
+Test Environment: You may take the test on your own PC.
+
+Test Distribution: The test will be sent directly to you 30 minutes before the start time.
+Note: The delivery time may vary by a few minutes; thank you for your understanding.
+
+On the Test Day:
+
+Please begin the test with the materials you receive just before the scheduled start time.
+
+Submit your source code (answers to the test) to the email address from which you received the test within 180 minutes after the test begins.
+
+Even if you do not complete all questions, please submit your results within 180 minutes.
+
+Test Duration: Up to 180 minutes (the standard expected time is approximately 120 minutes).
+
+Programming Language: You may use any language.
+Note: One question must be answered in either C or Rust.
+--
+
+Please generate one test question that:
+- Simulates a real-world system problem this team might face
+- Can be completed in 60–120 minutes
+- Requires system-level reasoning, not just algorithms
+- Includes telemetry, task tracking, or traceability aspects
+- Is language-agnostic but with clear instructions
+- Includes 1 bonus objective
+- Encourages the candidate to explain assumptions or add comments
