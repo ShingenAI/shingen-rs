@@ -1,25 +1,25 @@
 use std::collections::HashMap;
-use self::sat_struct::Sat_data;
+use super::sat_struct::SatData;
 
 pub fn execute_task(query: &str){
     println!("Task 2");
 
-    let mut sat_scores: HashMap<String, Sat_data> = HashMap::new();
+    let mut sat_scores: HashMap<String, SatData> = HashMap::new();
 
-    sat_scores.insert("Shin-2".to_string(), Sat_data {
+    sat_scores.insert("Shin-2".to_string(), SatData {
         name:"Shin-2".to_string(),
-        temperature: 72,
-        voltage: 110
+        temperature: 72.into(),
+        voltage: 110.into()
     });
-    sat_scores.insert(String::from("Shin-3"), Sat_data {
+    sat_scores.insert(String::from("Shin-3"), SatData {
         name:"Shin-3".to_string(),
-        temperature: 85,
-        voltage: 109
+        temperature: 85.into(),
+        voltage: 109.into()
     });
-    sat_scores.insert("Shin-1".into(),  Sat_data {
+    sat_scores.insert("Shin-1".into(),  SatData {
                                             name:"Shin-1".to_string(),
-                                            temperature: 90,
-                                            voltage: 110
+                                            temperature: 90.into(),
+                                            voltage: 105.into()
                                         }   
     );
 
@@ -46,7 +46,7 @@ pub fn execute_task(query: &str){
 
     for key in keys {
         if let Some(val) = sat_scores.get(key) {
-            println!("{}-{}", key, val);
+            println!("{}-{:#?}", key, val);
         }
     }
 }
